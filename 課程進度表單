@@ -1,0 +1,52 @@
+Enter file contents here
+http://bit.ly/git0429
+
+GitHub 網站 (請先註冊帳號)
+https://github.com/
+
+Git for Windows
+http://git-scm.com/
+
+TortoiseGit (Windows)
+https://code.google.com/p/tortoisegit
+
+30 天精通 Git 版本控管
+https://github.com/doggy8088/Learn-Git-in-30-days
+
+Git 版本控管實戰：新手入門篇 (PDF) 講義
+https://www.dropbox.com/s/x76vwpfadql6gp4/Git%20%E7%89%88%E6%9C%AC%E6%8E%A7%E7%AE%A1%E5%AF%A6%E6%88%B0%EF%BC%9A%E6%96%B0%E6%89%8B%E5%85%A5%E9%96%80%E7%AF%87.pdf?dl=0
+
+合併軟體建議使用WINMERGE 介面比較漂亮乾淨
+
+超快速用USB做版控
+將.git整個資料夾COPY到另一個資料夾
+
+針對資料夾 git showlog 查看  -> git reset --hard   資料就全部復原了
+
+
+利用一般網路資料夾進行多人git專案
+建立資料夾時命名最後用.git會在初始化時自動 --bare
+
+其他人分別去git clone 這個資料夾repo
+接下來就可以分開commit push 
+pull回來就會有最新的結果
+
+如果兩個人同時commit ，先push的人會成功
+後面的人要pull回來後再push
+
+除非使用push --force 強制push
+如果使用了push --force，舊的紀錄要從reflog去找
+也可以從reflog再去建立一個branch回來
+
+完整的reflog會在遠端的repo上
+本地repo僅能看到本地pull push merge的紀錄
+
+
+stash save 把目前的狀態暫存，包含未被板控的檔案
+然後回到原本master的branch
+
+stash pop 可以取出暫存的內容
+
+用途：開發新功能時，發現舊的程式有bug，先把新功能stash save 把舊的程式修正完畢commit後再利用stash pop叫回開發到一半的功能，避免相互影響
+
+
